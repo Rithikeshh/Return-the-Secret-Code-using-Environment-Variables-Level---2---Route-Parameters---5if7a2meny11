@@ -27,7 +27,7 @@ app.get('/api/get-env', (req, res) => {
     //Write your code here
     const value = process.env.secret
     console.log(value);
-    res.status(200).json({"secret": value})
+    res.status(200).send({secret: value})
 });
 
 module.exports = app;
