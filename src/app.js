@@ -25,8 +25,7 @@ Use the encryptString function given above to encrypt the secret code
 
 app.get('/api/get-env', (req, res) => {
     //Write your code here
-    const value = process.env.secret
-    console.log(value);
+    const value = process.env.SECRET
     res.status(200).send({secret: value})
 });
 
